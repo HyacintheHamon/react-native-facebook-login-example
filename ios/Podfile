@@ -1,0 +1,31 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'fbLogin' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+    pod 'FBSDKLoginKit'
+    
+  # Pods for fbLogin
+
+  target 'fbLogin-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+
+  end
+
+  target 'fbLoginTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+
+  target 'fbLogin-tvOS' do
+   # Comment the next line if you don't want to use dynamic frameworks
+   use_frameworks!
+   # Pods for fbLogin-tvOS
+  end
+
+end
